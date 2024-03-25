@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+// connects to MongoDB and execute command to list databases
+
+mongo --quiet --eval "db.adminCommand('listDatabases')" | grep "name" | cut -d'"' -f4

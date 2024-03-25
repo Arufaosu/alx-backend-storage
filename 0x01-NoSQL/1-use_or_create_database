@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+// Write a script that creates or uses the database my_db
+
+mongo --quiet --eval "use my_db"
